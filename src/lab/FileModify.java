@@ -148,7 +148,7 @@ public final class FileModify {
    System.out.println(randomText);
    System.out.println("Save to the path /Users/summerchaser/Desktop/2.txt:");
    try {
-       final File file = new File("/Users/summerchaser/Desktop/2.txt");
+       File file = new File("/Users/summerchaser/Desktop/2.txt");
        final FileWriter fileWriter = new FileWriter(file);
        fileWriter.write(randomText);
        fileWriter.close(); // 关闭数据流
